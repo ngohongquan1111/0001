@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/callThisContact"
+        android:title="Gọi lại"></item>
+<!--<item android:id="@+id/removefromcalllog"-->
+    <!--android:title="Xóa khỏi nhật ký cuộc gọi">-->
+<!--</item>-->
+
+    <item android:id="@+id/testDataLongClick"
+        android:title="Test Data"></item>
+</menu>

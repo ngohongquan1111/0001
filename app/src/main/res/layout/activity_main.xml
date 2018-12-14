@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false">
+
+                <requestFocus />
+            </SearchView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:text="Cuộc gọi"
+                android:padding="5dp"
+
+                android:id="@+id/TabCallLog1"/>
+            <Button
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:text="Hộp thư đến"
+
+                android:id="@+id/tabSmsRecived"/>
+            <Button
+                android:layout_width="115dp"
+                android:padding="5dp"
+                android:layout_height="50dp"
+                android:text="Hộp thư đi"
+
+                android:id="@+id/tabSmsSent"/>
+
+
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:id="@+id/callLogAll"
+        android:text="Tất cả"/>
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="Đến"
+        android:padding="5dp"
+        android:id="@+id/callLogIncome"/>
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="Đi"
+        android:padding="5dp"
+        android:id="@+id/callLongMissedCall"/>
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="Nhỡ"
+        android:padding="5dp"
+        android:id="@+id/callLogOutGoing"/>
+</LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listCallLog"
+          ></ListView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
